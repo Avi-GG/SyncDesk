@@ -1,4 +1,4 @@
-# SyncVerse - Real-Time Collaboration Platform
+# SyncDesk - Real-Time Collaboration Platform
 
 A comprehensive real-time collaboration platform built with React and Node.js, featuring multiple collaborative tools including code editing, document editing, whiteboard drawing, and chat functionality.
 
@@ -174,7 +174,7 @@ collab/
    Create a `.env` file in the backend directory:
 
    ```env
-   MONGO_URI=mongodb://localhost:27017/syncverse
+   MONGO_URI=mongodb://localhost:27017/syncdesk
    JWT_SECRET=your_jwt_secret_key
    PORT=5000
    ```
@@ -327,4 +327,4 @@ This project is licensed under the ISC License.
 
 ---
 
-**SyncVerse** - Where collaboration meets innovation! 🚀
+**SyncDesk** - Where collaboration meets innovation! 🚀

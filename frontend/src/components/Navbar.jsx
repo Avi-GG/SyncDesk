@@ -36,7 +36,7 @@ const Navbar = () => {
 		<nav className="bg-[#1c1c1c] px-4 py-1 shadow-md shadow-black text-white flex justify-between items-center relative">
 			<Link to="/" className=" !no-underline flex justify-center items-center">
 				<img src="/image.png" alt="" />
-				<h1 className="text-xl !text-orange-500 font-bold">SyncVerse</h1>
+				<h1 className="text-xl !text-orange-500 font-bold">SyncDesk</h1>
 			</Link>
 			{/* Desktop links */}
 			<div className="hidden md:flex items-center gap-4">
