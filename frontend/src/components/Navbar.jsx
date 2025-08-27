@@ -70,12 +70,15 @@ const Navbar = () => {
 				{isLoggedIn ? (
 					<button
 						onClick={handleLogout}
-						className="px-4 py-2 !rounded-lg border-2 !border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white focus:outline-none cursor-pointer"
+						className="px-4 py-2  !rounded-lg !border-2 !border-orange-500 !text-orange-500 hover:bg-orange-500 hover:!text-white focus:outline-none cursor-pointer"
 					>
 						Logout
 					</button>
 				) : (
-					<Link to="/login" className="hover:text-blue-400 cursor-pointer">
+					<Link
+						to="/login"
+						className="cursor-pointer !text-amber-500 !border-2 !border-amber-500 px-4 py-2 rounded-lg hover:bg-amber-500 hover:!text-white transition"
+					>
 						Login
 					</Link>
 				)}

@@ -46,3 +46,12 @@
 	pointer-events: none;
 	z-index: 999;
 }
+
+/* src/index.css */
+p {
+	margin-top: revert; /* restore browser default */
+	margin-bottom: revert;
+}
+a {
+	@apply no-underline;
+}
