@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+.cursor-tag {
+	position: absolute;
+	background: #000;
+	color: #fff;
+	padding: 2px 6px;
+	font-size: 12px;
+	border-radius: 4px;
+	pointer-events: none;
+	z-index: 999;
+}
+
+.remote-cursor .cursor-label {
+	position: absolute;
+	top: -20px;
+	left: 0;
+	background: #000;
+	color: #fff;
+	padding: 1px 4px;
+	font-size: 12px;
+	border-radius: 4px;
+	white-space: nowrap;
+}
+
+.remote-cursor {
+	pointer-events: none;
+}
+
+/* username label styling with correct colorful background */
+.ql-cursor[data-id] .ql-cursor-flag .ql-cursor-name {
+	opacity: 1 !important;
+	visibility: visible !important;
+	transition: none !important;
+	position: absolute;
+	top: -22px;
+	left: 0;
+	transform: translateX(-50%);
+	background: var(--cursor-color, rgba(0, 0, 0, 0.75));
+	color: #fff;
+	padding: 2px 6px;
+	border-radius: 6px;
+	font-size: 12px;
+	font-weight: bold;
+	white-space: nowrap;
+	pointer-events: none;
+	z-index: 999;
+}
