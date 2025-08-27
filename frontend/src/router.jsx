@@ -5,6 +5,7 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 import ChatRoom from "./pages/ChatRoom";
 import CodeEditor from "./components/CodeEditor";
+import ProtectedRoute from "./components/ProtectedRoute";
 import { Box } from "@chakra-ui/react";
 import DocsEditor from "./pages/DocsEditor";
 
@@ -13,7 +14,14 @@ const router = createBrowserRouter([
 		path: "/",
 		element: <App />,
 		children: [
-			{ index: true, element: <Home /> },
+			{
+				index: true,
+				element: (
+					<ProtectedRoute>
+						<Home />
+					</ProtectedRoute>
+				),
+			},
 			{ path: "register", element: <Register /> },
 			{ path: "login", element: <Login /> },
 			{
