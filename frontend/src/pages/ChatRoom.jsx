@@ -43,7 +43,7 @@ const ChatRoom = () => {
 	useEffect(() => {
 		if (!socket) return;
 		console.log("Joining room", roomId);
-		socket.emit("join_room", roomId);
+		socket.emit("join_room", { roomId, username });
 
 		socket.on("previous_messages", (oldMessages) => {
 			console.log("📜 Old messages:", oldMessages);
